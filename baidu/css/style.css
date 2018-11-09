@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    position: relative;
+    height: 2rem;
+    min-width: 1024px; 
+    width: 100%;
+}
+
+header li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    line-height: 2rem;
+    text-align: center
+}
+
+.asideleft{
+    position: absolute;
+    width: 400px;
+}
+ 
+a{
+ color: black   
+}
+
+.asideright{
+    position: absolute;
+    width: 491px;
+    height: 2rem;
+    top: 0px;
+    right: 0px;
+}
+.asideright .mm a{
+    font-size: 13px;
+    text-decoration: none
+}
+
+.asideright ul li div a{
+    display: block;
+    /* color: aqua; */
+    /* margin: 0 auto */
+}
+
+.settinglist , .userlist , .morelist {
+    box-shadow: 1px 1px 1px 1px sandybrown;
+    position: absolute;
+    display: none;
+}
+.settinglist , .userlist {
+    margin-left: -20px
+}
+.userlist{
+    z-index: 10;
+}
+
+.mm{
+    background: #38f
+}
+
+.photo{
+    width: 90px;
+    height: 90px;
+    /* background: red; */
+    margin-top: 20px
+}
+img{
+    width: 55px;
+    /* height: 60px; */
+}
+
+.asideright .mm{
+    margin-left: 10px;
+    width: 91.5px; 
+
+}
+.asideright .mm .phototitle{
+    margin-top: -10px
+}
+
+.message ::before{
+    content: '|';
+    padding-right: 20px
+}
+
+.centerout{
+    width: 1000px;
+    min-width: 1000px;
+    position: absolute;
+    left: 15%;
+}
+
+.center{
+    width: 641px;
+    height: 290px;
+    /* background: lightblue; */
+    margin: 0 auto
+}
+
+.login img{
+    width: 45%;
+}
+
+.login{
+    width: 641px;
+    margin-left: 30%;
+    
+}
+
+.more{
+    color: white
+}
+
+.seach{
+    width: 641px;
+}
+
+.search input{
+    float:left;
+    /* border:0; */
+    outline: none;
+}
+
+
+.centerout .center .search input[type="text"]{
+    /* display: block; */
+    width: 83%;
+    height: 2rem;
+    /* border:1px solid grey; */
+
+}
+
+.centerout .center .search input[type="button"]{
+    /* display: block; */
+    width: 15%;
+    height: 36px;
+    background-color:#38f;
+    color:#FFF;
+    border:0;
+
+
+}
+
+.search ul{
+    list-style: none;
+    width:83%;
+    border:0.5px solid #ddd;
+    display: none;
+}
+.search ul li{
+    padding-left:10px;
+}
+.search ul li.active{
+    background-color:lightgoldenrodyellow;
+    /* color:#FFF; */
+}
+
+
+#camera{
+    z-index: 10;
+    position: absolute;
+    top: 153px;
+    left: 680px;
+    margin-right: 50px;
+    height: 16px;
+    width: 18px; 
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+}
+
+#camera:hover{
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat 0 -20px;
+}
+
