@@ -95,15 +95,17 @@ $(function(){
     $('#dropbox').mouseenter(function () { 
         $('#dropbox li').each( function (indexInArray, valueOfElement) { 
             $(this).mouseenter(function () { 
-                $(this).first().addClass('active').siblings().removeClass('active');
+                $(this).addClass('active').siblings().removeClass('active');
+                console.log(this.innerHTML)
             });
             $(this).click(function (e) { 
                 e.preventDefault();
-                console.log(this.innerHTML)
+                
                 location.href="https://www.baidu.com/s?wd="+this.innerHTML;
             });
-        });
+        
     });
+});
 
 
     $.ajax({
