@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul{
+				margin: 100px auto;
+				list-style: none;
+				/* background-color: red; */
+				height: 100%;
+			}
+			ul li{
+				width: 80px;
+				text-align: center;
+				float: left;
+				margin-left: 15px;
+				overflow: auto
+			}
+			ul li a{
+				display: block;
+			}
+			#xx,#xxx,#morex{
+				/* display: none; */
+				box-shadow: 1px 1px 1px 1px wheat;
+			}
+            .show{
+                display: block
+            }
+			#more{
+				background: rebeccapurple
+			}
+			.photo{
+				width: 60px;
+				height: 90px;
+				/* background: red; */
+				margin-left: 10px
+			}
+			img{
+				width: 100%;
+				height: 60px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li id="hh">
+				<div ><a href="">常用链接</a></div>
+				<div id="xx">
+					<a href="">百度</a>
+					<a href="">搜狐</a>
+					<a href="">阿里巴巴</a>
+				</div>
+			</li>
+			<li id="hhh">
+				<div >联系我们</div>
+				<div id="xxx">
+					<a href="">email</a>
+					<a href="">qq</a>
+					<a href="">微信</a>
+				</div>
+			</li>
+			<li id="more">
+				<div class="morecolor">更多</div>
+				<div id="morex">
+					<hr>
+					<div class="photo">
+						<a href="#"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md" alt="">hhh</a>
+					</div>
+					<hr>
+					<div class="photo">
+						<a href="#"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md" alt="">hhh</a>
+					</div>
+					<hr>
+					<div class="photo">
+						<a href="#"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md" alt="">hhh</a>
+					</div>
+					<hr>
+					<div class="photo">
+						<a href="#"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md" alt="">hhh</a>
+					</div>
+					<hr>
+					
+						<a href="#"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang_72.png?v=md" alt="">hhh</a>
+					
+			
+					
+					
+					
+				</div>
+			</li>
+		</ul>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#hh').hover(function () {
+                $('#xx').css({
+                    display:'block'
+                })  
+            }, function () {
+                $('#xx').css({
+                    display:'none'
+                });
+            }
+        );
+		$('#hhh').hover(function () {
+                $('#xxx').css({
+                    display:'block'
+                })  
+            }, function () {
+                $('#xxx').css({
+                    display:'none'
+                });
+            }
+        );
+		$('#more').hover(function () {
+                $('#morex').css({
+                    display:'block'
+                })
+				$('#more').css({
+					background:'white'
+				})  
+            }, function () {
+                $('#morex').css({
+                    display:'none'
+                })
+				$('#more').css({
+					background:'rebeccapurple'
+				})  
+            }
+        );
+
+	</script>
+</html>
