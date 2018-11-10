@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body{
+    height: 100%;
+}
 
 header{
     position: relative;
@@ -58,15 +61,21 @@ a{
     z-index: 10;
 }
 
-.mm{
+.morelist{
+    position: fixed;
+    height: 100%;
+    overflow: auto
+}
+.mm{ 
     background: #38f
 }
 
 .photo{
+    
     width: 90px;
-    height: 90px;
+    /* height: 13%; */
     /* background: red; */
-    margin-top: 20px
+    margin-top: 20px;
 }
 img{
     width: 55px;

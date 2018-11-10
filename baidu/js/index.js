@@ -85,10 +85,7 @@ $(function(){
         }else if(e.keyCode==13){
             location.href="https://www.baidu.com/s?wd="+$('[type="text"]').val();
         }
-    }).blur(function (e) { 
-        e.preventDefault();
-        $('#dropbox').css({display:'none'});
-    });
+    })
 
     $('[type="button"]').click(function (e) { 
         e.preventDefault();
@@ -123,7 +120,6 @@ $(function(){
             $('.tem').text(res.data[0].hours[0].tem);
             $('.air_level').text(res.data[0].air_level);
             $('.air').text(res.data[0].air);
-            console.log(res)
             
         }
     });
