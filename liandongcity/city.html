@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="province">
+        <option value="请选择省份">请选择省份</option>
+    </select>
+
+    <select id="city">
+        <option value="请选择市">请选择市</option>
+    </select>
+
+    <select id="area">
+        <option value="请选择地区">请选择地区</option>
+    </select>
+
+</body>
+<script src="lib/js/jquery.js"></script>
+<script src="lib/js/citys.js"></script>
+<script>
+    $(function () {
+
+        var provinceStr = '';
+        for (var i in citiesall) {
+            provinceStr += '<option>' + citiesall[i].name + '</option>';
+        }
+
+        // console.log(provinceStr)
+        $('#province').html(provinceStr).change(function () {
+            var provinceName = $(this).val();
+            // console.log(provinceName)
+            for (var j in citiesall) {
+                // console.log(citiesall[j].name)
+                if (citiesall[j].name == provinceName) {
+                    var citys = citiesall[j].city;
+
+                    // console.log(citys)
+                    var cityStr = '';
+                    for (var n in citys) {
+                        // console.log(citys[n].name)
+                        cityStr += '<option>' + citys[n].name + '</option>';
+                    }
+                    console.log(citys[0])
+                    var city1 = citys[0].area
+                    var aa = ''
+                    for (var x in city1) {
+                        console.log( city1)
+                        aa += '<option>' +  city1[x] + '</option>'
+                    }
+                    $('#area').html(aa)
+
+
+                    // console.log(cityStr)
+
+                    $('#city').html(cityStr).change(function () {
+                        var cityName = $(this).val();
+                        for (var m in citys) {
+                            // console.log(citys[m].name)
+                            if (citys[m].name == cityName) {
+                                var areas = citys[m].area
+                                // console.log(areas)
+                                var areaStr = '';
+                                for (var o in areas) {
+                                    console.log(areas)
+                                    areaStr += '<option>' + areas[o] + '</option>'
+                                }
+                                $('#area').html(areaStr)
+                            }
+                        }
+                    })
+
+
+                }
+            }
+        })
+    })
+</script>
+
+</html>

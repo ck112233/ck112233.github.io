@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			.box {
+				margin: 50px;
+				width: 220px;
+				height: 220px;
+				position: relative;
+				
+			}
+			
+			.outer {
+				width: 220px;
+				height: 220px;
+				position: absolute;
+				border: 10px solid #ecab18;
+				border-right-color: #1ad280;
+				border-bottom-color: #1ad280;
+				border-radius: 50%;
+				transition: all 0.8s ease-in-out
+			}
+			
+			.img {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				width: 100%;
+				height: 100%;
+				transition: all 0.8s ease-in-out;
+				transform-style: preserve-3d;
+			}
+			img{
+				vertical-align: middle;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+			.inner{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				box-sizing: border-box;
+				top: 10px;
+				left: 10px;
+				text-align: center;
+				opacity: 0;
+				background: rgba(0, 0, 0, 0.6);
+				transition: all 0.8s ease-in-out;
+				border-radius: 50%;
+			}
+			
+			.box .inner p {
+				color: #bbb;
+				padding: 10px 5px;
+				margin: 0 30px;
+				font-size: initial;
+				border-top: 1px solid white;
+			}
+			
+			.box .inner h3 {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 22px;
+				margin: 0 30px;
+				padding: 55px 0 0 0;
+				height: 70px;
+			}
+			.inner.a:hover{
+					opacity:0.8;
+			}
+			.box.a:hover .outer{
+				transform: rotate(180deg);
+				
+			}
+			
+			
+			.inner.b{
+				margin-left: 400px;
+			}
+			.box.b:hover .inner.b{
+				opacity: 0.8;
+				transform: translateX(-400px);
+			}
+			.box.b:hover .img{
+				transform: rotate(-90deg);
+			}
+			
+			.box.c:hover .inner.c{
+				opacity: 0.8;
+			}
+			.inner.c .img{
+				transform-origin: 0 50% 0;
+			}
+			.box.c:hover .img{
+				transform: rotateY(-180deg);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="box a">
+			<div class="outer a"></div>
+			<div class="img a">
+				<img src="img/5.jpg" />
+			</div>
+			<div class="inner a">
+				<div class="inner-text a">
+					<h3>Heading here</h3>
+					<p>xixixixixi</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="box b">
+			<div class="outer b"></div>
+			<div class="img b">
+				<img src="img/5.jpg" />
+			</div>
+			<div class="inner b">
+				<div class="inner-text b">
+					<h3>Heading here</h3>
+					<p>xixixixixi</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="box c">
+			<div class="outer c"></div>
+			<div class="img c">
+				<img src="img/5.jpg" />
+			</div>
+			<div class="inner c">
+				<div class="inner-text c">
+					<h3>Heading here</h3>
+					<p>xixixixixi</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

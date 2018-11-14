@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="mian">
+				<div class="faceA">faceA</div>
+				<div class="faceB">faceB</div>
+				<div class="faceC">faceC</div>
+				<div class="faceD">faceD</div>
+				<div class="faceE">faceE</div>
+				<div class="faceF">faceF</div>
+			</div>
+		</div>
+		<style type="text/css">
+		.box {
+				margin: 200px 0px 0px 200px;
+				width: 200px;
+				height: 200px;
+				perspective: 400;
+				-webkit-perspective:400px;
+			}
+			
+			.mian {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				transform-style: preserve-3d;
+				transform: rotateY(0deg) rotateX(0deg);
+				/*background: #000000;*/
+				animation:rotate 4s infinite ease-in-out;
+			}
+			
+			.mian div[class^='face'] {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+				display: inline-block;
+			}
+			
+			.faceA {
+				background: #0000FF;
+				transform: translateZ(100px);
+			}
+			
+			.faceB {
+				background: #4CAE4C;
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			
+			.faceC {
+				background: #985F0D;
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			
+			.faceD {
+				background: #EB9316;
+				transform: rotateY(180deg) translateZ(100px);
+			}
+			
+			.faceE {
+				background: #FF0000;
+				transform: rotateX(-90deg) translateZ(100px);
+			}
+			
+			.faceF {
+				background: #4CAE4C;
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			
+			@keyframes rotate {
+				0% {
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+				50% {
+					transform: rotateX(360deg) rotateY(0deg);
+				}
+				100% {
+					transform: rotateX(360deg) rotateY(360deg);
+				}
+			}
+			
+		}
+		</style>
+	</body>
+
+</html>
