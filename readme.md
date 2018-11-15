@@ -1,11 +1,13 @@
 项目
 --
->[简易日程表](http://ck112233.github.io/todo.html)
-http://ck112233.github.io/todo.html
-
 >[仿百度首页](http://ck112233.github.io/fa-baidu/index.html)
 http://ck112233.github.io/fa-baidu/index.html
 
+>[简易日程表](http://ck112233.github.io/todo.html)
+http://ck112233.github.io/todo.html
+
+>[仿糗事百科](http://ck112233.github.io/qiushibaike/index.html)
+http://ck112233.github.io/qiushibaike/index.html
 
 小案例
 --
