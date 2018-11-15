@@ -30,8 +30,8 @@ $(function(){
             display:'none'
         })
         $('.more').css({
-            background:'#38f'
-            
+            background:'#38f',
+            color : 'white'
         })  
     }
 );
